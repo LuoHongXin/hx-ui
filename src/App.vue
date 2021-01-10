@@ -2,16 +2,19 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <hx-button></hx-button>
   </div>
 </template>
 
 <script>
+import HxButton from '../packages/hxButton/src/hxButton.vue'
 import HelloWorld from './components/HelloWorld.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    HxButton
   }
 }
 </script>
