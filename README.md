@@ -85,6 +85,7 @@
 
 - #### 发布组件
     <h5>1、在 package.json 中 script 字段中新增一个命令：</h5>
+
     ```js
     "lib": "vue-cli-service build --target lib --name xxxui --dest lib [entry]"
     ```
@@ -107,7 +108,8 @@
     目录将生成一个lib文件夹
     <img src="./static/7.jpg">
     <h5>3、添加 .npmignore 文件，因为发布时只有编译后额度 lib 目录、package.json、REAMME.md 才需要被发布，通过配置 .npmignore 文件可忽略不需要提交的目录和文件。</h5>
-    `
+
+    ```js
         # gitignore 忽略的文件
         .DS_Store
         node_modules
@@ -142,7 +144,7 @@
         babel.config.js
         *.map
         *.html
-    `
+    ```
     <img src="./static/6.jpg">
 
 
