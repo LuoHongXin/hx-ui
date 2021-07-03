@@ -107,6 +107,11 @@
     ```
     目录将生成一个lib文件夹
     <img src="./static/7.jpg">
+    1.hx-ui.common.js：一个给打包器用的 CommonJS 包 (不幸的是，webpack 目前还并没有支持 ES modules 输出格式的包)
+    2.hx-ui.umd.js：一个直接给浏览器或 AMD loader 使用的 UMD 包
+    3.hx-ui.umd.min.js：压缩后的 UMD 构建版本
+    4.hx-ui.css：提取出来的 CSS 文件 (可以通过在 vue.config.js 中设置 css: { extract: false } 强制内联)
+
     <h5>3、添加 .npmignore 文件，因为发布时只有编译后额度 lib 目录、package.json、REAMME.md 才需要被发布，通过配置 .npmignore 文件可忽略不需要提交的目录和文件。</h5>
 
     ```js
