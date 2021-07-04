@@ -120,7 +120,6 @@
         node_modules
         /dist
 
-
         # local env files
         .env.local
         .env.*.local
